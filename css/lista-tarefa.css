@@ -1,0 +1,27 @@
+.main-tarefa{
+    text-align: center;
+    padding-top: 80px;
+}
+.main-tarefa ul{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-tarefa li{
+    display: flex;
+    justify-content:space-between;
+    border: 1px solid var(--preto-texto);
+    width: 300px;
+    transition: 0.3s;
+}
+.botao-apagar{
+    background-color: #0F3D4C;
+    padding: 0 20px 0 20px;
+}
+.botao-apagar:hover{
+    scale: 1.1;
+    transition: 0.1s;
+    cursor: pointer;
+
+}
