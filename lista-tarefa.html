@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laricão Lanches</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="cabeçalho">
+            <h1 class="titulo-cabeçalho">Sistema de Gestão - Loja: Laricão Lanches</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <a href="lista-tarefa.html"><li class="borda-menu">Gestão de tarefas</li></a>
+                <a href="gestao-estoque.html"><li>Gestão de estoque</li></a>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-tarefa">
+            <input type="text" id="texto-input" placeholder="Digite uma tarefa:"> <button id="botao-input" onclick="addTarefa()">+</button>
+            <ul id="lista-de-tarefa">
+
+            </ul>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
