@@ -64,7 +64,7 @@ h3, h4, .subtitulo {
   transform: scale(1.05);
 }
 header, footer {
-  background-color: var(--azul-marca);
+  background-color: rgb(14, 14, 14);
   color: white;
   padding: 20px;
   text-align: center;
@@ -106,9 +106,6 @@ a{
 a:hover{
     text-decoration: underline;
 
-}
-main{
-    height: 100%;
 }
 .main-menu{
     background-color: white;
