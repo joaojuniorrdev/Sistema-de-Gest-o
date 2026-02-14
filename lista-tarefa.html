@@ -6,6 +6,7 @@
     <title>Laricão Lanches</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/lista-tarefa.css">
+    <link rel="stylesheet" href="css/formulario-tarefa.css">
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
 </head>
@@ -108,8 +109,45 @@
                 <div class="topo">
                     <button>Adicionar Tarefa</button>
                 </div>
-                <div class="formulario-to-do">
-                    aaa
+                <div class="formulario-to-do" id="form-tarefa">
+                    <form action="">
+                        <label for="nome-tarefa">tarefa:</label>
+                        <input type="text" name="nome-tarefa" id="nome-tarefa-input">
+
+                        <div>
+                                <label for="prioridades">Escolha a prioridade:</label>
+                                <input list="prioridades" id="prioridade-input" name="lista-prioridade">
+
+                                <datalist id="prioridades">
+                                    <option value="Alta"></option>
+                                    <option value="Média"></option>
+                                    <option value="Baixa"></option>
+                                </datalist>
+                        </div>
+                        <div>
+                            <label for="categorias">Selecione a categoria:</label>
+                            <input list="categorias" id="categorias-input" name="lista-categorias">
+
+                            <datalist id="categorias">
+                                <option value="Gestão"></option>
+                                <option value="Limpeza"></option>
+                                <option value="Manutenção"></option>
+                                <option value="Abastecimento"></option>
+                            </datalist>
+                        </div>
+                        <div>
+                            <label for="usuarios">Usuario:</label>
+                            <input list="usuarios" id="usuarios-input" name="lista-usuarios">
+
+                            <datalist id="usuarios">
+                                <option value="Robert"></option>
+                                <option value="Matheus"></option>
+                                <option value="Gabriel"></option>
+                                <option value="Misael"></option>
+                            </datalist>
+                        </div>
+                        
+                    </form>
                 </div>
             </div>
         </div>
