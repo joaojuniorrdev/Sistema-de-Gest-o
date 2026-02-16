@@ -11,6 +11,7 @@ $("#cancelar-tarefa").click(function(e){
 $(function(){
     $("#botao-adicionar").on("click", function(e){
         e.preventDefault()
+
         const tarefa = $("#nome-tarefa-input").val().trim()
         const prioridade = $("#prioridade-input").val().trim()
         const categoria = $("#categorias-input").val().trim()
@@ -45,11 +46,14 @@ $(function(){
                         </div>
             `)
 
-        $("div-a-fazer").append(novaBox)
+        
+        $("#boxes-a-fazer").append(novaBox)
+        console.log(novaBox)
 
         $("#nome-tarefa-input").val("")
         $("#prioridade-input").val("")
         $("#categorias-input").val("")
         $("#usuarios-input").val("")
+
     })
 })
