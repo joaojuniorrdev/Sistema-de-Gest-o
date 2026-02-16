@@ -54,6 +54,33 @@ $(function(){
         $("#prioridade-input").val("")
         $("#categorias-input").val("")
         $("#usuarios-input").val("")
-
     })
+})
+
+/*-- Função de passar um item da lista de a fazer para feito --*/
+
+$(function(e){
+    $("#boxes-a-fazer").on("click", "button", function(e){
+        e.preventDefault()
+        
+        const box = $(this).closest(".box")
+        box.find(".botao-ok").remove()
+
+        const usuario = box.find(".botao-ok p").text()
+
+        box.append(`<p class = "concluido">Concluído</p>`)
+        $("#div-feito").append(box)
+
+        const boxFeitos = $("#div-feito .box")
+/*-- Função de remover a box mais antiga --*/ 
+        if (boxFeitos.length > 4){
+            boxFeitos.first().remove()
+        }
+    })
+})
+
+$(function(e){
+    if($("#div-feito <p>") == "concluido"){
+        $("#div-feito <p>").style()
+    }
 })

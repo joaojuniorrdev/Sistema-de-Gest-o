@@ -23,6 +23,7 @@
 }
 .feito{
     flex-flow: column;
+    width: 90%;   
 }
 .boxes{
     display: flex;
@@ -33,7 +34,6 @@
    display: flex;
    flex-flow: row;
    width: auto;
-   border: 2px solid green;
    justify-content: space-between;
 }
 
