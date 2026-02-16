@@ -25,7 +25,7 @@
 
     <main>
         <div class="main-tarefa">
-             
+
             <div class="main1-2">
                
                 <div class="a-fazer">
@@ -105,15 +105,19 @@
                 </div>
                 
             </div>
+
             <div class="main2-2">
-                <div class="topo">
-                    <button>Adicionar Tarefa</button>
+
+                <div class="topo-form">
+                    <button class="botao-topo-form" id="botao-adicionar-tarefa-topo">Adicionar Tarefa</button>
                 </div>
+
                 <div class="formulario-to-do" id="form-tarefa">
                     <form action="">
-                        <label for="nome-tarefa">tarefa:</label>
-                        <input type="text" name="nome-tarefa" id="nome-tarefa-input">
-
+                        <div>
+                            <label for="nome-tarefa">tarefa:</label>
+                            <input type="text" name="nome-tarefa" id="nome-tarefa-input">
+                        </div>
                         <div>
                                 <label for="prioridades">Escolha a prioridade:</label>
                                 <input list="prioridades" id="prioridade-input" name="lista-prioridade">
@@ -147,8 +151,11 @@
                             </datalist>
                         </div>
                         
+                        <button>Adicionar</button>
+                        <button id="cancelar-tarefa">Cancelar</button>
                     </form>
                 </div>
+
             </div>
         </div>
     </main>

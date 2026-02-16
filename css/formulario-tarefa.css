@@ -1,0 +1,33 @@
+.botao-topo-form{
+    width: 80vh;
+    height: 8vh;
+    border: none;
+    border-radius: 3px;
+    background-color: black;
+    color: var(--laranja-destaque);
+    font-size: 3vh;
+}
+.botao-topo-form:hover{
+    scale: 1.01;
+    transition: 0.2s;
+    cursor: pointer;
+}
+#form-tarefa{
+    display: none;
+    background-color: rgb(235, 224, 224);  
+}
+#form-tarefa form{
+    display: flex;
+    flex-flow: column;
+}
+#form-tarefa form div{
+    display: flex;
+    flex-flow: column;
+    padding: 8px;
+}
+.formulario-to-do{
+    width: 80vh;
+}
+.formulario-to-do input{
+    
+}
