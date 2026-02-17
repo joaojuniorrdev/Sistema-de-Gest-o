@@ -12,7 +12,8 @@
 <body>
     <header>
         <div class="cabeçalho">
-            <h1 class="titulo-cabeçalho">Sistema de Gestão - Loja: Laricão Lanches</h1>
+            <h1 class="titulo-cabeçalho">Sistema de Gestão</h1>
+            <span>Loja: laricão Lanches</span>
         </div>
         <div class="menu">
             <ul>
@@ -25,12 +26,12 @@
         <div class="main-tarefa">
             <div class="main1-2">
                 <div class="a-fazer" id="div-a-fazer">
-                    <h3>A fazer:</h3>
+                    <span class="titulo"><h3>Pendentes:</h3></span>
                     <div class="boxes" id="boxes-a-fazer">
                     </div>
                 </div>
                 <div class="feito">
-                    <h3>Feito:</h3>
+                    <span class="titulo"><h3>Ultimas concluídas:</h3></span>
                     <div class="boxes" id="div-feito">  
                     </div>
                 </div>
@@ -47,24 +48,21 @@
                         </div>
                         <div>
                                 <label for="prioridades">Escolha a prioridade:</label>
-                                <input list="prioridades" id="prioridade-input" name="lista-prioridade">
-
-                                <datalist id="prioridades">
-                                    <option value="Alta"></option>
-                                    <option value="Média"></option>
-                                    <option value="Baixa"></option>
-                                </datalist>
+                                <select name="prioridades" id="prioridade-input">
+                                    <option value="Alta">Alta</option>
+                                    <option value="Média">Média</option>
+                                    <option value="Baixa">Baixa</option>
+                                </select>
                         </div>
                         <div>
                             <label for="categorias">Selecione a categoria:</label>
-                            <input list="categorias" id="categorias-input" name="lista-categorias">
-
-                            <datalist id="categorias">
-                                <option value="Gestão"></option>
-                                <option value="Limpeza"></option>
-                                <option value="Manutenção"></option>
-                                <option value="Abastecimento"></option>
-                            </datalist>
+                            
+                            <select name="categorias" id="categorias-input">
+                                <option value="Gestão">Gestão</option>
+                                <option value="Limpeza">Limpeza</option>
+                                <option value="Abastecimento">Abastecimento</option>
+                                <option value="Manutenção">Manutenção</option>
+                            </select>
                         </div>
                         <div>
                             <label for="usuarios">Usuario:</label>
@@ -77,9 +75,11 @@
                                 <option value="Misael"></option>
                             </datalist>
                         </div>
+                        <div>
+                            <button id="botao-adicionar" type="button">Adicionar</button>
+                            <button id="cancelar-tarefa">Cancelar</button>
+                        </div>
                         
-                        <button id="botao-adicionar" type="button">Adicionar</button>
-                        <button id="cancelar-tarefa">Cancelar</button>
                     </form>
                 </div>
             </div>

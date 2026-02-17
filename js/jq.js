@@ -33,14 +33,14 @@ $(function(){
                                 <h3>${tarefa}</h3>
                             </div>
                             <div>
-                                <p class="prioridade">${prioridade}</p>
-                                <p class="categoria">${categoria}</p>
+                                <p>Prioridade: <span class="prioridade">${prioridade}</p>
+                                <p class="categoria">Categoria: ${categoria}</p>
                             </div>
                             <div>
                                 <p>${dataAtual}</p>
                                 <div class="botao-ok">
                                     <p>${usuario}</p>
-                                    <button>ok</button>
+                                    <button>Concluído</button>
                                 </div>
                             </div>
                         </div>
@@ -48,7 +48,6 @@ $(function(){
 
         
         $("#boxes-a-fazer").append(novaBox)
-        console.log(novaBox)
 
         $("#nome-tarefa-input").val("")
         $("#prioridade-input").val("")
