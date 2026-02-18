@@ -3,7 +3,6 @@ let botaoPrioridade = document.getElementById('botao-adicionar')
 
 
 document.addEventListener("click", function(e){
-    e.preventDefault()
     let prioridade = document.getElementsByClassName("prioridade")
     for (let i = 0; i < prioridade.length; i++){
         let prioridadeValor = prioridade[i]

@@ -1,9 +1,6 @@
 /* Telas pequenas (mobile) */
 @media (max-width: 768px) {
-    body{
-        display: flex;
-        flex-flow: column;
-    }
+
  header{
     margin-top: 20px;
  }

@@ -17,8 +17,13 @@
     margin-left: 3vh;
 }
 .main2-2{
-width: 35%;
-margin-right: 5vh;
+    background-color: var(--Cinza-suave);
+    width: 35%;
+    margin-right: 5vh;
+    border-radius: 12px;
+    -webkit-box-shadow: 0px 6px 15px -2px #000000; 
+    box-shadow: 0px 6px 15px -2px #000000;
+    
 }
 .a-fazer, .feito{
     display: flex;

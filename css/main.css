@@ -27,6 +27,8 @@ Texto	            ⚫ #222222
 body {
   display: flex;
   flex-flow: column;
+  justify-content: center;
+  align-items: center;
   background-color: var(--preto-secundario);
   color: var(pret);
   line-height: 1.6;
@@ -127,11 +129,6 @@ a{
 a:hover{
     text-decoration: underline;
 
-}
-body{
-display: grid;
-place-items: center;
-height: 100vh;
 }
 main{
     width: 90%;
