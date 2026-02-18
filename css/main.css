@@ -25,10 +25,11 @@ Texto	            ⚫ #222222
   font-family: 'Segoe UI', sans-serif;
 }
 body {
+  display: flex;
+  flex-flow: column;
   background-color: var(--preto-secundario);
   color: var(pret);
   line-height: 1.6;
-  padding-bottom: 50px;
 }
 h1, h2, .titulo-principal {
   font-family: 'Segoe UI', sans-serif;

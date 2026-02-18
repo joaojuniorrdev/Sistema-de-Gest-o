@@ -1,0 +1,75 @@
+/* Telas pequenas (mobile) */
+@media (max-width: 768px) {
+    body{
+        display: flex;
+        flex-flow: column;
+    }
+ header{
+    margin-top: 20px;
+ }
+ header::after{
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 8px;
+    background: radial-gradient(
+        ellipse at center,
+        rgba(255,193,7,1) 20%,
+        rgba(255,193,7,0.6) 80%,
+        transparent 0%
+    );
+    filter: blur(8px);
+}
+ .absoluta{
+    position: relative;
+    height: 2000px;
+ }
+ .main-tarefa{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .main1-2{
+    display: flex;
+    flex-flow: column;
+    align-items: space-around;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+ }
+ .main2-2{
+    width: 100%;
+    margin-right: 0;
+    margin-top: 4vh;
+ }
+ .a-fazer, .feito{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100;
+    max-width: 100%;
+ }
+ .a-fazer{
+    margin-bottom: 20px;
+    
+ }
+ .titulo{
+    width: 100%;
+ }
+ .boxes{
+    width: 100%;
+    padding: 0 10px 0 10px;
+ }
+ .box{
+    width: 90%;
+ }
+ .botao-topo-form{
+    border: 1px solid red;
+ }
+
+}
